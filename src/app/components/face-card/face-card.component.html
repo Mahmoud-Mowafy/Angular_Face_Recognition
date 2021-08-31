@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="face-container">
+      <div class="face-img">
+        <img height="100" width="100" src="data:image/jpeg;base64,{{face.image}}" >
+      </div>
+      <div class="face-info">
+          <div class="face-info-item"><span>Name :   {{face.name}}</span></div>
+          <div class="face-info-item"><span>Date:    {{face.date}}</span></div>
+          <div class="face-info-item">
+            <input id="face.id" type="text" [(ngModel)]="newName"  placeholder="update name" /> 
+            <button class="btn" (click)="updateName(face.id)">Save</button>
+          </div>
+      </div>
+      <div>
+        <button class="delete-btn" (click)="deleteFace(face.id)">delete</button>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,6 @@
+  <img *ngIf="image else elseBlock" height="480" width="640" src="data:image/jpeg;base64,{{image}}" >
+  <ng-template  #elseBlock>
+    <img height="480" width="640" src="../../../assets/images/unkown.png">
+  </ng-template>
+
+  
